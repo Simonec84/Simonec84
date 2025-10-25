@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingue Internazionale</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+            <img src="static/logo.jpg" alt="Logo Multilingue Internazionale" class="w-10 h-10 rounded-full">
+            <span class="text-2xl font-bold text-blue-600">Multilingue Internazionale</span>
+        </a>
+        <div class="space-x-6 hidden sm:block">
+            <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+            <a href="languages.html" class="text-gray-700 hover:text-blue-600 font-medium">Lingue</a>
+            <a href="games.html" class="text-gray-700 hover:text-blue-600 font-medium">Giochi</a>
+            <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">Chi siamo</a>
+            <a href="donate.html" class="text-gray-700 hover:text-green-600 font-medium">Sostienici</a>
+        </div>
+    </nav>
+    <!-- Fine Navbar -->
+
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center text-center py-20 px-6">
+        <img src="static/logo.jpg" alt="Logo Multilingue Internazionale" class="w-40 h-40 rounded-full shadow-lg mb-6">
+        <h1 class="text-5xl font-bold text-gray-800 mb-4">Multilingue Internazionale</h1>
+        <p class="text-lg text-gray-700 max-w-3xl mb-8">
+            Impara, gioca e connettiti con il mondo!  
+            Il progetto <strong>Multilingue Internazionale</strong> nasce per unire le culture attraverso il linguaggio, 
+            rendendo l’apprendimento un’esperienza gioiosa e accessibile a tutti.
+        </p>
+        <div class="space-x-4">
+            <a href="games.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">Giochi linguistici</a>
+            <a href="languages.html" class="px-6 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700">Esplora le lingue</a>
+        </div>
+    </section>
+    <!-- Fine Hero Section -->
+
+    <!-- Donazioni Section -->
+    <section class="text-center py-20 px-6 bg-gradient-to-br from-green-50 to-blue-50">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Sostieni Multilingue Internazionale 💖</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            Ogni contributo volontario aiuta a mantenere il progetto gratuito e a sviluppare nuovi giochi, contenuti e lingue.
+        </p>
+
+        <form action="https://www.paypal.com/donate" method="post" target="_blank">
+            <!-- Inserisci il tuo indirizzo PayPal o ID del pulsante qui sotto -->
+            <input type="hidden" name="business" value="tornado.84@hotmail.it">
+            <input type="hidden" name="no_recurring" value="0">
+            <input type="hidden" name="currency_code" value="EUR">
+            <button type="submit"
+                class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-lg shadow-lg flex items-center space-x-2">
+                <i data-feather="heart" class="w-5 h-5"></i>
+                <span>Fai una donazione</span>
+            </button>
+        </form>
+
+        <p class="text-sm text-gray-500 mt-8 max-w-xl mx-auto">
+            Le donazioni sono facoltative e servono solo per migliorare e mantenere attivo il progetto.  
+            Grazie di cuore per ogni piccolo gesto di supporto! 🌍
+        </p>
+    </section>
+    <!-- Fine Donazioni Section -->
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-white text-center py-6 border-t border-gray-200">
+        <p class="text-gray-600 mb-2">Ideato da <strong>SCA</strong> • © 2025 Multilingue Internazionale</p>
+        <p class="text-sm text-gray-500">Un progetto educativo aperto, nato per unire il mondo attraverso le lingue 🌍</p>
+    </footer>
+    <!-- Fine Footer -->
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
